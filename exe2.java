@@ -1,20 +1,18 @@
 import javax.swing.JOptionPane;
 
-
-public class exe2 { 
-	
-	public static void main(String arg[]){
+public class exe2 {
+  
+	public static void main(String arg[]) {
 		
-		double salario;
-		double adicional;
-		double salarioliq;
-	
-		salario = Integer.parseDouble(JOpitionPane.showInputDialog("Digite o salario"));
-		adicional = Integer.parseDouble(JOpitionPane.showInputDialog("Digite o adicional noturno"));
+		double dt,cg;
+		double res; 
 		
-		salarioliq = salario + adicional;
+		dt = Double.parseDouble(JOptionPane.showInputDialog("Digite a distancia percorida:"));
+		cg = Double.parseDouble(JOptionPane.showInputDialog("Digite o combustivel gasto"));
 		
-		System.out.println("Salario:" + salarioliq);
+		res =dt/cg;
+		
+		JOptionPane.showMessageDialog(null,"O consumo é:"+res);
+		
 	}
-
 }
